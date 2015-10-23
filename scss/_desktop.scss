@@ -1,0 +1,48 @@
+body {
+	background: url('../img/bg-img.jpg') no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+	  	-o-background-size: cover;
+	  	background-size: cover;
+	height: 100vh;
+}
+
+/**************************************************************/
+/*************************LOGO MENU****************************/
+/**************************************************************/
+#logo {
+	padding: 10px;
+	img {
+		display: block;
+		margin: 0 auto;
+		max-width: 70%;
+	}
+}
+
+.mobile_menu {
+	display: none;
+}
+.desktop_menu {
+	background-color: rgba(0,0,0,.7);
+	color: #EB3B83;
+	display: block;
+	width: 100%;
+	ul {
+		text-align: center;
+		li {
+			cursor: pointer;
+			display: inline-block;
+			font-size: 1.3em;
+			margin-right: 5%;
+			padding: 10px;
+			&:hover {
+				text-decoration: underline;
+			}
+			a {
+				color: #EB3B83;
+				text-decoration: none;
+			}	
+		}
+		
+	}
+}

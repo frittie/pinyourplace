@@ -1,0 +1,169 @@
+/**************************************************************/
+/*************************GENERAL******************************/
+/**************************************************************/
+body {
+	background: url('../img/bg-img-m.jpg') no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+	  	-o-background-size: cover;
+	  	background-size: cover;
+	height: 100vh;
+}
+
+/* CLEARFIX */
+.clearfix{
+	clear: both;
+}
+/**************************************************************/
+/***************************INDEX******************************/
+/**************************************************************/
+#startpage, #content_map, #registrate, .info_text {
+	background-color: rgba(250,250,250,.7);
+	display: block;
+	font-family: "Neucha";
+	margin: 0 auto;
+	text-align: center;
+}
+
+#startpage, #registrate{
+	padding: 20px;
+	width: 80%;
+	a{
+		color: black;
+		text-decoration: none;
+	}
+	.fa{
+		margin-right: 5px;
+	}
+	input {
+		margin-bottom: 20px;
+	}
+
+	.info .fa-info-circle {
+		font-size: 2em;
+	}
+}
+/**************************************************************/
+/*************************LOGO MENU****************************/
+/**************************************************************/
+#logo {
+	padding: 10px;
+	img {
+		display: block;
+		margin: 0 auto;
+		max-width: 70%;
+	}
+}
+
+.desktop_menu {
+	display: none;
+}
+
+.mobile_menu {
+	left: 6%;
+	position: absolute;
+	top: 6%;
+	width: 90%;
+	z-index: 1;
+	.fa-bars{
+		color: #EB3B83;
+		cursor: pointer;
+		font-size: 2em;
+	}
+
+	#menu_content {
+		background-color: rgba(0,0,0,.9);
+		border-radius: 10px;
+		color: #EB3B83;
+		display: none;
+		margin-top: 25px;
+		padding: 2% 0;
+		width: 100%;
+		ul {
+			list-style-type: none;
+			width: 100%;
+			li {
+				cursor: pointer;
+				display: block;
+				margin-top: 2%;
+				text-transform: uppercase;
+				padding: 10px;
+				a {
+					color: #EB3B83;
+					text-decoration: none;
+					text-transform: uppercase;
+				}				
+			}
+		}
+		.fa{
+			margin-right: 5px;
+		}	
+	}	
+}
+/**************************************************************/
+/**************************LOGGEDIN****************************/
+/**************************************************************/
+
+/**************************  INFO  ****************************/
+#wrapper_info {
+	width: 100%;
+	.info_text {
+		display: none;
+		margin: 10px auto;
+		padding: 10px;
+		width: 80%;
+		.fa-times {
+			color: #EB3B83;
+			cursor: pointer;
+			float: right;
+			font-size: 2em;
+		}
+	}
+}
+
+
+/**************************  MAP  *****************************/
+
+#wrapper_map {
+	#content_map {
+	height: auto;
+	margin-bottom: 20px;
+	padding: 5px;
+	width: 100%;
+		#map {
+			height: 70vh;
+			margin: 0 auto;
+			margin-bottom: 30px;
+			margin-top: 30px;
+			overflow: hidden;
+			width: 90%;
+		}
+		#new_pin {
+			display: block;
+			margin: 0 auto;
+			margin-top: 10px;
+		}
+	}
+}
+
+#info {
+	display: none;
+	font-family: "Neucha";
+	margin: 0 auto;
+	padding: 20px;
+	text-align: center;
+	width: 80%;
+	input, textarea, select {
+		margin-bottom: 20px;
+	}
+	select {
+		font-family: "FontAwesome", arial;
+	}
+	#cancel{
+		color: #EB3B83;
+	}
+}
+
+
+
+

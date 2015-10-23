@@ -1,0 +1,18 @@
+@import "normalize";
+@import "base";
+
+
+$tabletbreakpoint: 700px;
+$desktopbreakpoint: 1200px;
+
+@media screen and (max-width: $tabletbreakpoint - 1) {
+	@import "mobile";
+}
+
+@media screen and (min-width: $tabletbreakpoint) and (max-width: $desktopbreakpoint - 1) {
+	@import "tablet";
+}
+
+@media screen and (min-width: $desktopbreakpoint) {
+	@import "desktop";
+}
